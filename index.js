@@ -35,7 +35,7 @@ class IndentedConsole {
 const Logger = new IndentedConsole()
 
 request(
-  `https://${ username }:${ password }@api.github.com/users/freemanon/events`,
+  `https://${ username }:${ password }@api.github.com/users/${ username }/events`,
   {
     headers: {
       'User-Agent': 'freemanon'
